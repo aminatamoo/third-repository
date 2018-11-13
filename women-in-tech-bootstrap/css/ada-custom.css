@@ -1,0 +1,42 @@
+
+.hero{
+  background-size: cover;
+  background-color: rgba(211,211,211, 0.3);
+  min-width: 100%;
+}
+
+h1{
+  font-weight:bold;
+  display:block;
+  padding-left:6%;
+  max-width:100%;
+  font-size:100px;
+  text-align:left;
+  font-family: "Orbitron";
+}
+
+nav ul li a .img-fluid{
+  max-width:45%;
+}
+nav ul{
+  list-style-type: none;
+  margin-top: 20%;
+}
+nav ul li{
+  margin-left: 20%;
+}
+
+#katherine-nav-name #grace-nav-name{
+  display:inline;
+}
+figure a .img-fluid{
+  max-width:100%;
+}
+
+figure a{
+  display:block;
+}
+
+.short-bio{
+  padding-top:5%;
+}
