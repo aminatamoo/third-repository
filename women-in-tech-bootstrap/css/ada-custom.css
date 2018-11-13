@@ -15,6 +15,29 @@ h1{
   font-family: "Orbitron";
 }
 
+.navbar{
+  min-width: 100%;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0 -15px;
+}
+
+.navbar-brand{
+  margin-left: 10%;
+  margin-right: 0px;
+}
+
+.navbar-nav{
+  margin-top:0;
+  margin-right:5%;
+  width:50%;
+}
+
+.nav-item{
+  margin-left:0%;
+  width:80%;
+}
+
 nav ul li a .img-fluid{
   max-width:45%;
 }
@@ -37,6 +60,13 @@ figure a{
   display:block;
 }
 
-.short-bio{
+#short-bio{
   padding-top:5%;
+}
+
+#key-facts{
+  border-left: 1px solid black;
+}
+#sidebar{
+  border-right: 1px solid black;
 }
