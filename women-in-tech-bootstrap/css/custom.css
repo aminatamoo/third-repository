@@ -1,0 +1,28 @@
+
+.hero{
+  background-size: cover;
+  background-color: rgba(211,211,211, 0.3);
+  min-width: 100%;
+}
+
+h1{
+  font-weight:bold;
+  display:block;
+  padding-top: 20%;
+  max-width:100%;
+  font-size:100px;
+  text-align:left;
+  font-family: "Orbitron";
+}
+
+nav ul a img{
+  max-width:60%;
+}
+nav ul{
+  list-style-type: none;
+  margin: 0 auto;
+}
+
+figure a img{
+  width:100%;
+}
