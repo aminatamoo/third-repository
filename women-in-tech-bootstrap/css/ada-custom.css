@@ -18,7 +18,7 @@ Hero decoration
 
 @media screen and (min-width:900px){
   #sidebar-title-box{
-    height: 35rem;
+    height: 45rem;
   }
 }
 /*
@@ -38,8 +38,13 @@ h1{
 }
 
 @media screen and (min-width:900px){
+
+  #title-row{
+    width:100%;
+  }
+
   h1{
-    margin-left:15%;
+    margin-left:5%;
     padding-top:25%;
     max-width:100%;
     font-size:5rem;
@@ -87,11 +92,11 @@ Sidebar decoration
 @media screen and (min-width:900px){
 
 nav ul li a .img-fluid{
-  max-width:45%;
+  max-width:35%;
 }
 nav ul{
   list-style-type: none;
-  padding-top: 3%;
+  padding-top: 2%;
 }
 nav ul li{
   margin-left: 24%;
@@ -143,5 +148,5 @@ figure a{
 }
 
 footer{
-  padding:4%;
+  padding:5%;
 }
