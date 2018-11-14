@@ -1,9 +1,24 @@
 
+/*
+--------------------------------------------------------------------------------------
+Hero decoration
+--------------------------------------------------------------------------------------
+*/
 .hero{
   background-size: cover;
   background-color: rgba(211,211,211, 0.3);
   min-width: 100%;
 }
+#sidebar-title-box{
+  border-top: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
+}
+
+/*
+--------------------------------------------------------------------------------------
+Website Title decoration
+--------------------------------------------------------------------------------------
+*/
 
 h1{
   font-weight:bold;
@@ -15,6 +30,11 @@ h1{
   font-family: "Orbitron";
 }
 
+/*
+--------------------------------------------------------------------------------------
+Navigation decoration
+--------------------------------------------------------------------------------------
+*/
 .navbar{
   min-width: 100%;
   box-sizing: border-box;
@@ -38,6 +58,11 @@ h1{
   width:80%;
 }
 
+/*
+--------------------------------------------------------------------------------------
+Sidebar decoration
+--------------------------------------------------------------------------------------
+*/
 nav ul li a .img-fluid{
   max-width:45%;
 }
@@ -52,6 +77,18 @@ nav ul li{
 #katherine-nav-name #grace-nav-name{
   display:inline;
 }
+
+#sidebar{
+  border-right: 1px solid black;
+  height:100%;
+}
+
+/*
+--------------------------------------------------------------------------------------
+Main image and short bio decoration
+--------------------------------------------------------------------------------------
+*/
+
 figure a .img-fluid{
   max-width:100%;
 }
@@ -66,7 +103,4 @@ figure a{
 
 #key-facts{
   border-left: 1px solid black;
-}
-#sidebar{
-  border-right: 1px solid black;
 }
