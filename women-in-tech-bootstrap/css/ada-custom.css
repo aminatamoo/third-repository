@@ -12,6 +12,7 @@ Hero decoration
 #sidebar-title-box{
   border-top: 1px solid lightgrey;
   border-bottom: 1px solid lightgrey;
+  height: 27rem;
 }
 
 /*
@@ -23,9 +24,10 @@ Website Title decoration
 h1{
   font-weight:bold;
   display:block;
-  padding-left:6%;
+  padding-left:7%;
+  padding-top:10%;
   max-width:100%;
-  font-size:100px;
+  font-size:6rem;
   text-align:left;
   font-family: "Orbitron";
 }
