@@ -12,7 +12,7 @@ Hero decoration
 #sidebar-title-box{
   border-top: 1px solid lightgrey;
   border-bottom: 1px solid lightgrey;
-  height: 27rem;
+  height: 35rem;
 }
 
 /*
@@ -25,7 +25,7 @@ h1{
   font-weight:bold;
   display:block;
   padding-left:7%;
-  padding-top:10%;
+  padding-top:20%;
   max-width:100%;
   font-size:6rem;
   text-align:left;
@@ -70,7 +70,6 @@ nav ul li a .img-fluid{
 }
 nav ul{
   list-style-type: none;
-  margin-top: 20%;
 }
 nav ul li{
   margin-left: 20%;
@@ -83,6 +82,14 @@ nav ul li{
 #sidebar{
   border-right: 1px solid black;
   height:100%;
+}
+
+#sidebar-nav{
+  margin-top:35%;
+}
+
+h4{
+  text-align: center;
 }
 
 /*
