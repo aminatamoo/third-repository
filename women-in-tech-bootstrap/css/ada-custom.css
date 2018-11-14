@@ -12,9 +12,14 @@ Hero decoration
 #sidebar-title-box{
   border-top: 1px solid lightgrey;
   border-bottom: 1px solid lightgrey;
-  height: 35rem;
+  height: 20rem;
 }
 
+@media screen and (min-width:1024px){
+  #sidebar-title-box{
+    height: 35rem;
+  }
+}
 /*
 --------------------------------------------------------------------------------------
 Website Title decoration
@@ -30,6 +35,15 @@ h1{
   font-size:6rem;
   text-align:left;
   font-family: "Orbitron";
+}
+
+@media screen and (min-width:1024px){
+  h1{
+    padding-left:7%;
+    padding-top:20%;
+    max-width:100%;
+    font-size:6rem;
+  }
 }
 
 /*
@@ -70,9 +84,10 @@ nav ul li a .img-fluid{
 }
 nav ul{
   list-style-type: none;
+  padding-top: 3%;
 }
 nav ul li{
-  margin-left: 20%;
+  margin-left: 24%;
 }
 
 #katherine-nav-name #grace-nav-name{
@@ -91,6 +106,10 @@ nav ul li{
 h4{
   text-align: center;
 }
+
+#sidebar-nav ul li a:hover img{
+  border-style: none;
+  border-radius: 50%;
 
 /*
 --------------------------------------------------------------------------------------
