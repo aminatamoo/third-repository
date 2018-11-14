@@ -12,10 +12,11 @@ Hero decoration
 #sidebar-title-box{
   border-top: 1px solid lightgrey;
   border-bottom: 1px solid lightgrey;
+  padding-top:0%;
   height: 20rem;
 }
 
-@media screen and (min-width:1024px){
+@media screen and (min-width:900px){
   #sidebar-title-box{
     height: 35rem;
   }
@@ -29,20 +30,20 @@ Website Title decoration
 h1{
   font-weight:bold;
   display:block;
-  padding-left:7%;
   padding-top:20%;
   max-width:100%;
-  font-size:6rem;
-  text-align:left;
+  font-size:3rem;
+  text-align:center;
   font-family: "Orbitron";
 }
 
-@media screen and (min-width:1024px){
+@media screen and (min-width:900px){
   h1{
-    padding-left:7%;
-    padding-top:20%;
+    margin-left:15%;
+    padding-top:25%;
     max-width:100%;
-    font-size:6rem;
+    font-size:5rem;
+    text-align:left;
   }
 }
 
@@ -79,6 +80,12 @@ Navigation decoration
 Sidebar decoration
 --------------------------------------------------------------------------------------
 */
+#sidebar{
+  display:none;
+}
+
+@media screen and (min-width:900px){
+
 nav ul li a .img-fluid{
   max-width:45%;
 }
@@ -97,6 +104,7 @@ nav ul li{
 #sidebar{
   border-right: 1px solid black;
   height:100%;
+  display:block;
 }
 
 #sidebar-nav{
@@ -110,7 +118,8 @@ h4{
 #sidebar-nav ul li a:hover img{
   border-style: none;
   border-radius: 50%;
-
+}
+}
 /*
 --------------------------------------------------------------------------------------
 Main image and short bio decoration
@@ -131,4 +140,8 @@ figure a{
 
 #key-facts{
   border-left: 1px solid black;
+}
+
+footer{
+  padding:4%;
 }
