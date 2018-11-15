@@ -5,93 +5,213 @@
 <head>
 	<title>Grace Hopper</title>
 	<meta charset="UTF-8" name="viewport" content="width=device=width, initial-scale=1.0">
-	<link href="css/grace-hopper.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+	<link href="css/ada-custom.css" rel="stylesheet">
 </head>
 
 <body>
-	<!--Header including main title and navigation bar-->
-			<header>
-	<!--Main title with link to homepage-->
-				<a href="index.html">
-					<h1>Women In Technology</h1>
-				</a>
-	<!--Navigation bar containing links to webpages and corresponding photos-->
-				<nav>
+	<!--Header including main title, top navigation bar and side bar-->
+	<header class="hero container">
+		<!--Navigation bar containing internal links and link to home page-->
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<a class="navbar-brand" href="#">Grace Hopper</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#short-bio">At a Glance</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#overview">Full Biography</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<div id="sidebar-title-box" class=" align-items-center">
+			<!--Sidebar containing links to webpages and corresponding photos-->
+			<div class="row">
+			<div id="sidebar" class="col-md-4 fixed-top">
+				<nav id="sidebar-nav">
+					<h4>Sidebar</h4>
 					<ul>
 						<li>
-							<a href="katherine-johnson.html"><img id="katherine-nav-photo" src="images\Katherine_Johnson_at_NASA_in_1966.jpg" alt="An image of Katherine Johnson at NASA in 1966 linking to her bio page.">
-								<p id="katherine-nav-name">Katherine Johnson</p>
+							<a href="katherine-johnson.html">
+								<img class="icons" src="images/bio_icon.png" alt="Biography icon.">Katherine Johnson
+								<div class="hidden-sidebar">
+								<img id="katherine-nav-photo" class="img-fluid" src="https://www.brwnpaperbag.com/wp-content/uploads/2017/03/Rachel-Ignotofsky-8.jpg" alt="Illustration, from women in science, of Katherine Johnson.">
+								<h3>Key Facts</h3>
+								<dl class="row">
+									<dt class="col-sm-3">Born:</dt>
+									<dd class="col-sm-9">Katherine Coleman, August 26, 1918, White Sulphur Springs, West Virginia, U.S.</dd>
+
+									<dt class="col-sm-3">Occupation:</dt>
+									<dd class="col-sm-9">Physicist, mathematician</dd>
+
+									<dt class="col-sm-3">Known for:</dt>
+									<dd class="col-sm-9">Calculating the trajectories for many NASA missions</dd>
+								</dl>
+							</div>
 							</a>
 						</li>
 						<li>
-							<a href="grace-hopper.html"><img id="grace-nav-photo" src="images\Commodore_Grace_M_Hopper_USN.jpg" alt="An image of Grace Hopper.">
-								<p id="grace-nav-name">Grace Hopper</p>
+							<a href="ada-lovelace.html">
+								<img class="icons" src="images/bio_icon.png" alt="Biography icon.">Ada Lovelace
+									<div class="hidden-sidebar">
+									<img id="grace-nav-photo" class="img-fluid" src="https://i.pinimg.com/originals/3e/23/f6/3e23f6a63757602a359fd66ec868658d.jpg" alt="Illustration, from women in science, of Ada Lovelace.">
+									<h3>Key facts</h3>
+									<dl class="row">
+										<dt class="col-sm-3">Born:</dt>
+										<dd class="col-sm-9">The Hon. Augusta Ada Byron, 10 December 1815, London, England.</dd>
+
+										<dt class="col-sm-3">Died:</dt>
+										<dd class="col-sm-9">27 November 1852, Marylebone, London, England</dd>
+
+										<dt class="col-sm-3">Known for:</dt>
+										<dd class="col-sm-9">Mathematics, Computing</dd>
+									</dl>
+									</div>
 							</a>
 						</li>
 						<li>
-							<a href="ada-lovelace.html"><img id="ada-nav-photo" src="images\Ada_Lovelace_portrait.jpg" alt="A Portrait of Ada Lovelace.">
-								<p id="ada-nav-name">Ada Lovelace</p>
-							</a>
+							<a href="index.html"><img class="icons" src="images/home_icon.png" alt="Home icon.">Home</a>
+						</li>
+						<li>
+							<a href="#"><img class="icons" src="images/contact_icon.png" alt="Contact icon.">Contact</a>
+							<li>
+								<a href="#"><img class="icons" src="images/about_icon.png" alt="About icon.">About</a>
+							</li>
 						</li>
 					</ul>
 				</nav>
-			</header>
-	<div id="wrapper">
+					<div class="col-md-8">
+						<div></div>
+					</div><!--/.col-->
+			</div><!--/.row-->
+			<div id="title-row" class="row">
+				<div class="col-md-4">
+					<div></div>
+				</div>
+				<!--/.col-->
+				<div class="col-md-8">
+					<!--Main title-->
+					<img id="top-right-image" src="http://www.hookelenews.com/wp-content/uploads/2018/03/031618_09.jpg" alt="Illustration, by Women in Science, of Ada Lovelace.">
+					<h1 clas="display-1">Women In Technology</h1>
+				</div>
+				<!--/.col-->
+			</div>
+			<!--/.row-->
+		</header>
+		<!--/.container-->
 		<main>
-<!--Section containing main photo for webpage and aside with key facts-->
-			<section>
+<!--Section containing main title and photo for webpage and aside with key facts-->
+
+			<section id="short-bio" class="short container">
+				<div class="row">
+				<div class="col-md-4">
+					<div></div>
+				</div><!--/.col-->
+				<div class="col-md-8">
+				<h2>Grace Hopper</h2>
+			</div><!--/.col-->
+		</div>
+		<!--/.row-->
+				<div class="row">
+					<div class="col-md-4">
+						<div></div>
+					</div>
+					<!--/.col-->
+					<div class="col-md-5">
 				<figure>
-					<a href="https://en.wikipedia.org/wiki/Grace_Hopper"><img src="images\Commodore_Grace_M_Hopper_USN.jpg" alt="An image of Grace Hopper."></a>
-					<figurecaption>Image of Grace Hopper</figurecaption>
+					<a href="https://en.wikipedia.org/wiki/Grace_Hopper"><img class="figure-img img-fluid rounded" src="images\Commodore_Grace_M_Hopper_USN.jpg" alt="An image of Grace Hopper."></a>
+					<figcaption class="figure-caption">Image of Grace Hopper</figcaption>
 				</figure>
+			</div>
+			<!--/.col-->
+				<div id="key-facts" class="grace-hopper-facts col-md-3">
 				<aside>
 					<h3>Key facts</h3>
+					<dl class="row">
+						<dt class="col-sm-3">Born:</dt>
+						<dd class="col-sm-9">Grace Murray Hopper, December 9, 1906, New York City, New York, U.S.</dd>
 
-					<ul>
-						<li>Born: Grace Murray Hopper, December 9, 1906, New York City, New York, U.S.</li>
-						<li>Nicknames: "Amazing Grace", "Grandma COBOL"</li>
-						<li>Died: January 1, 1992, Arlington, Virginia, U.S.</li>
-						<li>Served: United States Navy</li>
-						<li>Years of service: 1943–1966, 1967–1971, 1972–1986</li>
-						<li>Rank: Rear admiral (lower half)</li>
-					</ul>
+						<dt class="col-sm-3">Died:</dt>
+						<dd class="col-sm-9">January 1, 1992, Arlington, Virginia, U.S.</dd>
+
+						<dt class="col-sm-3">Nicknames:</dt>
+						<dd class="col-sm-9">"Amazing Grace", "Grandma COBOL"</dd>
+
+						<dt class="col-sm-3">Served:</dt>
+						<dd class="col-sm-9">United States Navy</dd>
+
+						<dt class="col-sm-3">Years of service:</dt>
+						<dd class="col-sm-9">1943–1966, 1967–1971, 1972–1986</dd>
+
+						<dt class="col-sm-3">Rank:</dt>
+						<dd class="col-sm-9">Rear admiral (lower half)</dd>
+					</dl>
+					</dl>
 					<aside>
+					</div>
+					<!--/.col-->
+				</div>
+				<!--/.row-->
 			</section>
-<!--Section containing main title and blockquote for the page -->
-			<section>
-				<h2>Grace Hopper</h2>
+<!--Section containing blockquote for the page -->
+<section class="container">
+	<div class="row">
+		<div class="col-md-4">
+			<div></div>
+		</div>
+		<!--/.col-->
+		<div class="col-md-8">
 
-				<blockquote id="main-blockquote">
+				<blockquote id="main-blockquote" class="blockquote">
 					<p>"The most dangerous phrase in the language is, 'We've always done it this way'."</p>
-					<footer>
-						<p>- Grace Hopper</p>
+					<footer class="blockquote-footer">
+					- Grace Hopper
 					</footer>
-
 				</blockquote>
+			</div>
+			<!--/.col-->
+		</div>
+		<!--/.row-->
 			</section>
-<!--Section containing main content and long bio -->
-			<section>
-				<h3>Overview</h3>
-
+			<hr>
+			<!--Section containing main content and long bio -->
+			<article class="container">
+				<div class="row">
+					<div class="col-md-4">
+						<div></div>
+					</div>
+					<!--/.col-->
+					<div class="col-md-8">
+						<section id="overview">
+							<h3>Overview</h3>
 				<p>
 					Grace Brewster Murray Hopper (née Murray) was an American computer scientist and United States Navy rear admiral. One of the first programmers of the Harvard Mark I computer, she was a pioneer of computer programming who invented one of the
 					first compiler related tools. She popularised the idea of machine-independent programming languages, which led to the development of COBOL, an early high-level programming language still in use today.
 				</p>
+				<hr>
 			</section>
 
-			<section>
+			<section id="rise">
 				<h3>Rise to Fame</h3>
 
-				<blockquote>
+				<blockquote class="blockquote">
 					<p>"If it is a good idea, go ahead and do it. It is much easier to apologize than to get permission."<p>
-							<footer>
-								<p>-Grace Hopper</p>
+							<footer class="blockquote-footer">
+							-Grace Hopper
 							</footer>
 				</blockquote>
 
 				<p>
-					JHopper attempted to enlist in the Navy during World War II but was rejected because she was 34 years old. She instead joined the Navy Reserves. Hopper began her computing career in 1944 when she worked on the Harvard Mark I team led by Howard
+					Hopper attempted to enlist in the Navy during World War II but was rejected because she was 34 years old. She instead joined the Navy Reserves. Hopper began her computing career in 1944 when she worked on the Harvard Mark I team led by Howard
 					H. Aiken. In 1949, she joined the Eckert–Mauchly Computer Corporation and was part of the team that developed the UNIVAC I computer. At Eckert–Mauchly she began developing the compiler. She believed that a programming language based on English
 					was possible. Her compiler converted English terms into machine code understood by computers. By 1952, Hopper had finished her program linker (originally called a compiler), which was written for the A-0 System.On New Year's Day 1992, Hopper
 					died in her sleep of natural causes at her home in Arlington, Virginia; she was 85 years of age. She was interred with full military honors in Arlington National Cemetery.
@@ -102,9 +222,10 @@
 					Hopper to guide them in creating a machine-independent programming language. This led to the COBOL language, which was inspired by her idea of a language being based on English words. In 1966, she retired from the Naval Reserve, but in 1967,
 					the Navy recalled her to active duty. She retired from the Navy in 1986 and found work as a consultant for the Digital Equipment Corporation, sharing her computing experiences.
 				</p>
+				<hr>
 			</section>
 
-			<section>
+			<section id="awards">
 				<h3>Awards and Accolades</h3>
 
 				<p>
@@ -112,15 +233,43 @@
 					During her lifetime, Hopper was awarded 40 honorary degrees from universities across the world. A college at Yale University was renamed in her honour. In 1991, she received the National Medal of Technology. On November 22, 2016, she was
 					posthumously awarded the Presidential Medal of Freedom by President Barack Obama.
 				</p>
+				<hr>
 			</section>
+			<div id="social-buttons">
+				<a href="www.twitter.com" class="btn btn-primary btn-lg btn-twitter">Twitter</a>
+				<a href="www.facebook.com" class="btn btn-primary btn-lg btn-facebook">Facebook</a>
+				<a href="www.pinterest.com" class="btn btn-primary btn-lg btn-pinterest">Pinterest</a>
+			</div>
+		</div>
+		<!--/.col-->
+	</div>
+	<!--/.row-->
+</article>
 		</main>
 
-		<hr>
-<!--Footer-->
+		<hr id="above-footer">
+		<!--Footer-->
 		<footer>
-			<a href="https://en.wikipedia.org/wiki/Grace_Hopper">Source</a>
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+				<a class="navbar-brand" href="#">&copy 2018 Aminat Amoo</a>
+				<div class="collapse navbar-collapse justify-content-end" id="navbarNavFooter">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link" href="index.html">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="https://en.wikipedia.org/wiki/Ada_Lovelace">Source</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Privacy</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Sitemap</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
 		</footer>
-	</div>
 </body>
 
 </html>

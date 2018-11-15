@@ -219,6 +219,10 @@ section h2{
   font-size: 5rem;
 
 }
+.grace-hopper-facts dd{
+  padding-left:20%;
+  padding-right: 0;
+}
 }
 /*
 --------------------------------------------------------------------------------------
