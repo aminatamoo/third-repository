@@ -85,6 +85,20 @@ Navigation decoration
   width:80%;
 }
 
+#top-right-image{
+  display:none;
+}
+
+@media screen and (min-width:900px){
+
+#top-right-image{
+  float:right;
+  max-width:20%;
+  padding-top:20%;
+  margin-right: 10%;
+}
+}
+
 /*
 --------------------------------------------------------------------------------------
 Sidebar decoration
@@ -125,7 +139,9 @@ Sidebar decoration
 }
 
 h4{
-  text-align: center;
+  font-family: "Orbitron";
+  text-align:left;
+  padding-left:15%;
 }
 
 .hidden-sidebar{
@@ -170,6 +186,21 @@ figure a{
 #key-facts{
   border-left: 1px solid black;
 }
+
+section h2{
+  font-family: "Orbitron";
+  text-align: center;
+}
+
+@media screen and (min-width:900px){
+
+section h2{
+  padding-top: 5%;
+  padding-bottom: 5%;
+  font-size: 5rem;
+
+}
+}
 /*
 --------------------------------------------------------------------------------------
 Main content decoration
@@ -177,7 +208,70 @@ Main content decoration
 */
 
 main section h3{
-  font-family: "Orbitron"
+  font-family: "Orbitron";
+  padding-top:3%;
+  padding-bottom:3%;
+}
+
+main section p{
+  line-height: 200%;
+}
+
+#social-buttons{
+  margin-top:5%;
+  margin-bottom:5%;
+  margin-left: 30%;
+}
+
+.btn-twitter{
+  background-color: #1da1f2;
+}
+
+.btn-facebook{
+  background-color: #3b5998;
+}
+
+.btn-pinterest{
+  background-color: #bd081c;
+}
+
+#social-buttons .btn-primary{
+  border: none;
+}
+
+.btn-twitter:hover{
+  background-color: #60BDF6;
+}
+
+.btn-facebook:hover{
+  background-color: #768BB7;
+}
+
+.btn-pinterest:hover{
+  background-color: #D15260;
+}
+
+/*
+--------------------------------------------------------------------------------------
+Blockquote decoration
+--------------------------------------------------------------------------------------
+*/
+
+blockquote p{
+    font-family: sans-serif;
+    color:rgba(232, 59, 162, 1);
+}
+blockquote footer{
+  font-style: italic;
+}
+#main-blockquote p{
+  /*margin-left:0%;
+  min-width:100%;*/
+  font-size:2rem;
+  font-family: "Orbitron";
+}
+#main-blockquote footer{
+  /*margin-left:70%;*/
 }
 
 /*
