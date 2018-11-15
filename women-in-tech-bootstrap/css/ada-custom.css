@@ -91,7 +91,12 @@ Navigation decoration
 
 @media screen and (min-width:900px){
 
+/*h1:hover + #top-right-image{
+  display:block;
+}*/
+
 #top-right-image{
+  display:block;
   float:right;
   max-width:20%;
   padding-top:20%;
@@ -133,9 +138,23 @@ Sidebar decoration
   height:100%;
   display:block;
 }
+#sidebar a{
+  color:grey;
+}
+#sidebar a:hover{
+  /*text-decoration: underline;*/
+  color:rgba(232, 59, 162, 1);
+}
 
 #sidebar-nav{
   margin-top:30%;
+}
+.hidden-sidebar dt, .hidden-sidebar h3{
+  font-family: "Orbitron";
+}
+
+.hidden-sidebar h3{
+  margin: 8% auto;
 }
 
 h4{
@@ -154,7 +173,7 @@ h4{
 /*.sidebar ul li a{
   text-decoration: none;*/
 }
-a:hover {
+ a:hover {
   text-decoration: none;
 }
 #sidebar-nav ul li a:hover .hidden-sidebar{
