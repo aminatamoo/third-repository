@@ -131,7 +131,7 @@ h4{
 .hidden-sidebar{
   display:none;
   background-color: rgba(128, 128, 128, 1);
-  color:black;
+  color:white;
   position:relative;
   z-index:1000;
 }
@@ -144,6 +144,9 @@ a:hover {
 #sidebar-nav ul li a:hover .hidden-sidebar{
   display:block;
 
+}
+.icons{
+margin-right: 5%;
 }
 }
 /*
@@ -167,6 +170,21 @@ figure a{
 #key-facts{
   border-left: 1px solid black;
 }
+/*
+--------------------------------------------------------------------------------------
+Main content decoration
+--------------------------------------------------------------------------------------
+*/
+
+main section h3{
+  font-family: "Orbitron"
+}
+
+/*
+--------------------------------------------------------------------------------------
+Footer decoration
+--------------------------------------------------------------------------------------
+*/
 
 footer .navbar{
   padding:4%;
