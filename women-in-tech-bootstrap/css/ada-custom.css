@@ -129,10 +129,6 @@ Sidebar decoration
   height:65px;
 }
 
-#katherine-nav-name #grace-nav-name{
-  display:inline;
-}
-
 #sidebar{
   border-right: 1px solid black;
   height:100%;
@@ -141,12 +137,17 @@ Sidebar decoration
 #sidebar a{
   color:grey;
 }
-#sidebar a:hover{
-  /*text-decoration: underline;*/
+#sidebar-nav-ada a:hover, #sidebar-nav-grace a:hover, #sidebar-nav-katherine a:hover{
   color:rgba(232, 59, 162, 1);
 }
+#sidebar-nav-grace a:hover{
+  color:rgba(232, 131, 59, 1);
+}
+#sidebar-nav-katherine a:hover{
+  color:rgba(232, 131, 59, 1);
+}
 
-#sidebar-nav{
+#sidebar-nav-ada, #sidebar-nav-grace, #sidebar-nav-katherine{
   margin-top:30%;
 }
 .hidden-sidebar dt, .hidden-sidebar h3{
@@ -176,7 +177,8 @@ h4{
  a:hover {
   text-decoration: none;
 }
-#sidebar-nav ul li a:hover .hidden-sidebar{
+#sidebar-nav-ada a:hover .hidden-sidebar, #sidebar-nav-grace a:hover .hidden-sidebar,
+#sidebar-nav-katherine a:hover .hidden-sidebar{
   display:block;
 
 }
@@ -280,9 +282,19 @@ Blockquote decoration
 --------------------------------------------------------------------------------------
 */
 
-blockquote p{
+.ada-lovelace-q{
     font-family: sans-serif;
     color:rgba(232, 59, 162, 1);
+}
+
+.grace-hopper-q{
+  font-family: sans-serif;
+  color:rgba(232, 131, 59, 1);
+}
+
+.katherine-johnson-q{
+  font-family: sans-serif;
+  color:rgba(232, 131, 59, 1);
 }
 blockquote footer{
   font-style: italic;
