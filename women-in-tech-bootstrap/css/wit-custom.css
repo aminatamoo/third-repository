@@ -144,7 +144,7 @@ Sidebar decoration
   color:rgba(232, 131, 59, 1);
 }
 #sidebar-nav-katherine a:hover{
-  color:rgba(232, 131, 59, 1);
+  color:rgba(78, 162, 147, 1);
 }
 
 #sidebar-nav-ada, #sidebar-nav-grace, #sidebar-nav-katherine{
@@ -221,7 +221,7 @@ section h2{
   font-size: 5rem;
 
 }
-.grace-hopper-facts dd{
+.facts dd{
   padding-left:20%;
   padding-right: 0;
 }
@@ -262,6 +262,8 @@ main section p{
 
 #social-buttons .btn-primary{
   border: none;
+  display:block;
+  margin-top: 3%;
 }
 
 .btn-twitter:hover{
@@ -275,7 +277,12 @@ main section p{
 .btn-pinterest:hover{
   background-color: #D15260;
 }
-
+@media screen and (min-width:900px){
+  #social-buttons .btn-primary{
+    display:inline;
+    margin-top: 0%;
+  }
+}
 /*
 --------------------------------------------------------------------------------------
 Blockquote decoration
@@ -294,16 +301,16 @@ Blockquote decoration
 
 .katherine-johnson-q{
   font-family: sans-serif;
-  color:rgba(232, 131, 59, 1);
+  color:rgba(78, 162, 147, 1);
 }
 blockquote footer{
   font-style: italic;
 }
 #main-blockquote p{
-  /*margin-left:0%;
-  min-width:100%;*/
   font-size:2rem;
   font-family: "Orbitron";
+  padding-top: 5%;
+  text-align: center;
 }
 #main-blockquote footer{
   /*margin-left:70%;*/

@@ -6,150 +6,305 @@
 <head>
 	<title>Katherine Johnson</title>
 	<meta charset="UTF-8" name="viewport" content="width=device=width, initial-scale=1.0">
-	<link href="css/katherine-johnson.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+	<link href="css/wit-custom.css" rel="stylesheet">
 </head>
 
 <body>
-	<div id="wrapper">
-<!--Header including main title and navigation bar-->
-		<header>
-<!--Main title with link to homepage-->
-			<a href="index.html">
-				<h1>Women In Technology</h1>
-			</a>
-<!--Navigation bar containing links to webpages and corresponding photos-->
-			<nav>
-				<ul>
-					<li>
-						<a href="katherine-johnson.html"><img id="katherine-nav-photo" src="images\Katherine_Johnson_at_NASA_in_1966.jpg" alt="An image of Katherine Johnson at NASA in 1966 linking to her bio page.">
-							<p id="katherine-nav-name">Katherine Johnson</p>
-						</a>
+	<!--Header including main title, top navigation bar and side bar-->
+	<header class="hero container">
+		<!--Navigation bar containing internal links and link to home page-->
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<a class="navbar-brand" href="#">Katherine Johnson</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">Home</a>
 					</li>
-					<li>
-						<a href="grace-hopper.html"><img id="grace-nav-photo" src="images\Commodore_Grace_M_Hopper_USN.jpg" alt="An image of Grace Hopper.">
-							<p id="grace-nav-name">Grace Hopper</p>
-						</a>
+					<li class="nav-item">
+						<a class="nav-link" href="#short-bio">At a Glance</a>
 					</li>
-					<li>
-						<a href="ada-lovelace.html"><img id="ada-nav-photo" src="images\Ada_Lovelace_portrait.jpg" alt="A Portrait of Ada Lovelace.">
-							<p id="ada-nav-name">Ada Lovelace</p>
-						</a>
+					<li class="nav-item">
+						<a class="nav-link" href="#overview">Full Biography</a>
 					</li>
-
 				</ul>
-			</nav>
-		</header>
-		<main>
-			<!--Section containing main photo for webpage and aside with key facts-->
-			<section>
+			</div>
+		</nav>
+		<div id="sidebar-title-box" class=" align-items-center">
+			<!--Sidebar containing links to webpages and corresponding photos-->
+			<div class="row">
+				<div id="sidebar" class="col-md-4 fixed-top">
+					<nav id="sidebar-nav-katherine">
+						<h4>Sidebar</h4>
+						<ul>
+							<li>
+								<a href="grace-hopper.html">
+									<img class="icons" src="images/bio_icon.png" alt="Biography icon.">Grace Hopper
+									<div class="hidden-sidebar">
+										<img id="grace-nav-photo" class="img-fluid" src="http://www.hookelenews.com/wp-content/uploads/2018/03/031618_09.jpg" alt="Illustration, from women in science, of Grace Hopper.">
+										<h3>Key facts</h3>
+										<dl class="row">
+											<dt class="col-sm-3">Born:</dt>
+											<dd class="col-sm-9">Grace Murray Hopper, December 9, 1906, New York City, New York, U.S.</dd>
 
-				<figure>
-					<a href="https://en.wikipedia.org/wiki/Katherine_Johnson"><img src="images\Katherine_Johnson_at_NASA_in_1966.jpg" alt="An image of Katherine Johnson at NASA in 1966."></a>
-					<figurecaption>Image of Katherine Johnson at NASA in 1966</figurecaption>
-				</figure>
-				<aside>
-					<h3>Key facts</h3>
+											<dt class="col-sm-3">Died:</dt>
+											<dd class="col-sm-9">January 1, 1992, Arlington, Virginia, U.S.</dd>
 
-					<ul>
-						<li>Born: Katherine Coleman, August 26, 1918, White Sulphur Springs, West Virginia, U.S.</li>
-						<li>Nationality: American</li>
-						<li>Education: West Virginia State College, B.S. (summa cum laude), 1937, Mathematics & French</li>
-						<li>Occupation: Physicist, mathematician</li>
-						<li>Employer: NACA, NASA</li>
-						<li>Known for: Calculating the trajectories for many NASA missions</li>
-					</ul>
+											<dt class="col-sm-3">Rank:</dt>
+											<dd class="col-sm-9">Rear admiral (lower half)</dd>
+										</dl>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="ada-lovelace.html">
+									<img class="icons" src="images/bio_icon.png" alt="Biography icon.">Ada Lovelace
+									<div class="hidden-sidebar">
+										<img id="ada-nav-photo" class="img-fluid" src="https://i.pinimg.com/originals/3e/23/f6/3e23f6a63757602a359fd66ec868658d.jpg" alt="Illustration, from women in science, of Ada Lovelace.">
+										<h3>Key facts</h3>
+										<dl class="row">
+											<dt class="col-sm-3">Born:</dt>
+											<dd class="col-sm-9">The Hon. Augusta Ada Byron, 10 December 1815, London, England.</dd>
+
+											<dt class="col-sm-3">Died:</dt>
+											<dd class="col-sm-9">27 November 1852, Marylebone, London, England</dd>
+
+											<dt class="col-sm-3">Known for:</dt>
+											<dd class="col-sm-9">Mathematics, Computing</dd>
+										</dl>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="index.html"><img class="icons" src="images/home_icon.png" alt="Home icon.">Home</a>
+							</li>
+							<li>
+								<a href="#"><img class="icons" src="images/contact_icon.png" alt="Contact icon.">Contact</a>
+							<li>
+								<a href="#"><img class="icons" src="images/about_icon.png" alt="About icon.">About</a>
+							</li>
+							</li>
+						</ul>
+					</nav>
+					<div class="col-md-8">
+						<div></div>
+					</div>
+					<!--/.col-->
+				</div>
+				<!--/.row-->
+				<div id="title-row" class="row">
+					<div class="col-md-4">
+						<div></div>
+					</div>
+					<!--/.col-->
+					<div class="col-md-8">
+						<!--Main title-->
+						<img id="top-right-image" src="https://www.brwnpaperbag.com/wp-content/uploads/2017/03/Rachel-Ignotofsky-8.jpg" alt="Illustration, from women in science, of Katherine Johnson.">
+						<h1 clas="display-1">Women In Technology</h1>
+					</div>
+					<!--/.col-->
+				</div>
+				<!--/.row-->
+	</header>
+	<!--/.container-->
+	<main>
+		<!--Section containing main title and photo for webpage and aside with key facts-->
+		<section id="short-bio" class="short container">
+			<div class="row">
+				<div class="col-md-4">
+					<div></div>
+				</div>
+				<!--/.col-->
+				<div class="col-md-8">
+					<h2>Katherine Johnson</h2>
+				</div>
+				<!--/.col-->
+			</div>
+			<!--/.row-->
+			<div class="row">
+				<div class="col-md-4">
+					<div></div>
+				</div>
+				<!--/.col-->
+				<div class="col-md-5">
+					<figure>
+						<a href="https://en.wikipedia.org/wiki/Katherine_Johnson"><img class="figure-img img-fluid rounded" src="images\Katherine_Johnson_at_NASA_in_1966.jpg" alt="An image of Katherine Johnson at NASA in 1966."></a>
+						<figcaption class="figure-caption">Image of Katherine Johnson at NASA in 1966</figcaption>
+					</figure>
+				</div>
+				<!--/.col-->
+				<div id="key-facts" class="facts col-md-3">
 					<aside>
-			</section>
-			<!--Section containing main title and blockquote for the page -->
-			<section>
-				<h2>Katherine Johnson</h2>
+						<h3>Key facts</h3>
+						<dl class="row">
+							<dt class="col-sm-3">Born:</dt>
+							<dd class="col-sm-9">Katherine Coleman, August 26, 1918, White Sulphur Springs, West Virginia, U.S.</dd>
 
-				<blockquote id="main-blockquote">
-					<p>"Girls are capable of doing everything men are capable of doing. Sometimes they have more imagination than men."</p>
-					<footer>
-						<p>- Katherine Johnson</p>
-					</footer>
+							<dt class="col-sm-3">Nationality:</dt>
+							<dd class="col-sm-9">American</dd>
 
-				</blockquote>
-			</section>
-<!--Section containing main content and long bio -->
-			<section>
-				<h3>Overview</h3>
+							<dt class="col-sm-3">Education:</dt>
+							<dd class="col-sm-9">West Virginia State College, B.S. (summa cum laude), 1937, Mathematics & French</dd>
 
-				<blockquote>
-					<p>"I felt most proud of the success of the Apollo mission. They were going to the moon and I computed the path to get there."<p>
-							<footer>
-								<p>- Katherine Johnson</p>
-							</footer>
-				</blockquote>
+							<dt class="col-sm-3">Occupation:</dt>
+							<dd class="col-sm-9">Physicist, mathematician</dd>
 
-				<p>
-					Katherine Coleman Goble Johnson is an African-American mathematician whose calculations of orbital mechanics as a NASA employee were critical to the success of the first and subsequent U.S. manned spaceflights. During her 35-year career at
-					NASA
-					and its predecessor, she earned a reputation for mastering complex manual calculations and helped the space agency pioneer the use of computers to perform the tasks. Her work included calculating trajectories, launch windows and emergency
-					return
-					paths for Project Mercury spaceflights, including those of astronauts Alan Shepard, the first American in space, and John Glenn, the first American in orbit, and rendezvous paths for the Apollo lunar lander and command module on flights to the
-					Moon. Her calculations were also essential to the beginning of the Space Shuttle program, and she worked on plans for a mission to Mars. In 2015, President Barack Obama awarded Johnson the Presidential Medal of Freedom.
-				</p>
-			</section>
+							<dt class="col-sm-3">Employer:</dt>
+							<dd class="col-sm-9">NACA, NASA</dd>
 
-			<section>
-				<h3>Background</h3>
-
-				<p>
-					Johnson was born Katherine Coleman in 1918 in White Sulphur Springs, Greenbrier County, West Virginia, the daughter of Joylette and Joshua Coleman. She was the youngest of four children. Her mother was a teacher and her father was a lumberman,
-					farmer, and handyman and worked at the Greenbrier Hotel.
-				</p>
-			</section>
-
-			<section>
-				<h3>Education</h3>
-
-				<blockquote>
-					<p>"Math. It's just there ... You're either right or you're wrong. That's what I like about it."</p>
-					<footer>
-						<p>- Katherine Johnson</p>
-					</footer>
-				</blockquote>
-
-				<p>
-					Johnson showed a talent for math from an early age. Because Greenbrier County did not offer public schooling for African-American students past the eighth grade, the Colemans arranged for their children to attend high school at Institute, West
-					Virginia. This school was on the campus of West Virginia State College (WVSC, now West Virginia State University). Johnson was admitted when she was only 10 years old. The family split their time between Institute during the school year and
-					White
-					Sulphur Springs in the summer.
-				</p>
-
-				<p>
-					Johnson graduated from high school at 14 and entered West Virginia State, a historically black college. As a student, she took every math course offered by the college. Multiple professors mentored her, including chemist and mathematician
-					Angie
-					Turner King, who had also mentored the girl throughout high school, and W.W. Schiefflin Claytor, the third African American to receive a PhD in math. Claytor added new math courses just for Katherine. She graduated summa cum laude in 1937,
-					with
-					degrees in Mathematics and French, at age 18. She took on a teaching job at a black public school in Marion, Virginia.
-				</p>
-			</section>
-
-			<section>
-				<h2>Post-Education</h2>
-
-				<p>
-					In 1939, after marrying her first husband, James Goble, Johnson left her teaching job and enrolled in a graduate math program. She quit after one year, after becoming pregnant and choosing to focus on her family. At the time of her entry, she
-					was
-					the first African-American woman to attend graduate school at West Virginia University in Morgantown, West Virginia. Through WVSC's president, Dr. John W. Davis, she became one of three African-American students, and the only female, selected
-					to
-					integrate the graduate school after the United States Supreme Court ruling Missouri ex rel. Gaines v. Canada (1938). The court had ruled that states that provided public higher education to white students also had to provide it to black
-					students,
-					to be satisfied either by establishing black colleges and universities or by admitting black students to previously white-only universities.
-				</p>
-			</section>
-		</main>
-
+							<dt class="col-sm-3">Known for:</dt>
+							<dd class="col-sm-9">Calculating the trajectories for many NASA missions</dd>
+						</dl>
+						<aside>
+				</div>
+				<!--/.col-->
+			</div>
+			<!--/.row-->
+		</section>
+		<!--Section containing blockquote for the page -->
+		<section class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<div></div>
+				</div>
+				<!--/.col-->
+				<div class="col-md-8">
+<hr>
+					<blockquote id="main-blockquote" class="blockquote">
+						<p class="katherine-johnson-q">"Girls are capable of doing everything men are capable of doing. Sometimes they have more imagination than men."</p>
+						<footer class="blockquote-footer">
+							Katherine Johnson
+						</footer>
+					</blockquote>
+				</div>
+				<!--/.col-->
+			</div>
+			<!--/.row-->
+		</section>
 		<hr>
-<!--Footer-->
-		<footer>
-			<a href="https://en.wikipedia.org/wiki/Katherine_Johnson">Source</a>
-		</footer>
-	</div>
+		<!--Section containing main content and long bio -->
+		<article class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<div></div>
+				</div>
+				<!--/.col-->
+				<div class="col-md-8">
+					<section id="overview">
+						<h3>Overview</h3>
+
+						<blockquote class="blockquote">
+							<p class="katherine-johnson-q">"I felt most proud of the success of the Apollo mission. They were going to the moon and I computed the path to get there."<p>
+									<footer class="blockquote-footer">
+										Katherine Johnson
+									</footer>
+						</blockquote>
+
+						<p>
+							Katherine Coleman Goble Johnson is an African-American mathematician whose calculations of orbital mechanics as a NASA employee were critical to the success of the first and subsequent U.S. manned spaceflights. During her 35-year career at
+							NASA
+							and its predecessor, she earned a reputation for mastering complex manual calculations and helped the space agency pioneer the use of computers to perform the tasks. Her work included calculating trajectories, launch windows and emergency
+							return
+							paths for Project Mercury spaceflights, including those of astronauts Alan Shepard, the first American in space, and John Glenn, the first American in orbit, and rendezvous paths for the Apollo lunar lander and command module on flights to
+							the
+							Moon. Her calculations were also essential to the beginning of the Space Shuttle program, and she worked on plans for a mission to Mars. In 2015, President Barack Obama awarded Johnson the Presidential Medal of Freedom.
+						</p>
+						<hr>
+					</section>
+
+					<section id="background">
+						<h3>Background</h3>
+
+						<p>
+							Johnson was born Katherine Coleman in 1918 in White Sulphur Springs, Greenbrier County, West Virginia, the daughter of Joylette and Joshua Coleman. She was the youngest of four children. Her mother was a teacher and her father was a
+							lumberman,
+							farmer, and handyman and worked at the Greenbrier Hotel.
+						</p>
+						<hr>
+					</section>
+
+					<section>
+						<h3>Education</h3>
+
+						<blockquote class="blockquote">
+							<p class="katherine-johnson-q">"Math. It's just there ... You're either right or you're wrong. That's what I like about it."</p>
+							<footer class="blockquote-footer">
+								Katherine Johnson
+							</footer>
+							</blockquote>
+
+							<p>
+								Johnson showed a talent for math from an early age. Because Greenbrier County did not offer public schooling for African-American students past the eighth grade, the Colemans arranged for their children to attend high school at Institute,
+								West
+								Virginia. This school was on the campus of West Virginia State College (WVSC, now West Virginia State University). Johnson was admitted when she was only 10 years old. The family split their time between Institute during the school year and
+								White
+								Sulphur Springs in the summer.
+							</p>
+
+							<p>
+								Johnson graduated from high school at 14 and entered West Virginia State, a historically black college. As a student, she took every math course offered by the college. Multiple professors mentored her, including chemist and mathematician
+								Angie
+								Turner King, who had also mentored the girl throughout high school, and W.W. Schiefflin Claytor, the third African American to receive a PhD in math. Claytor added new math courses just for Katherine. She graduated summa cum laude in 1937,
+								with
+								degrees in Mathematics and French, at age 18. She took on a teaching job at a black public school in Marion, Virginia.
+							</p>
+							<hr>
+					</section>
+
+					<section>
+						<h3>Post-Education</h3>
+
+						<p>
+							In 1939, after marrying her first husband, James Goble, Johnson left her teaching job and enrolled in a graduate math program. She quit after one year, after becoming pregnant and choosing to focus on her family. At the time of her entry, she
+							was
+							the first African-American woman to attend graduate school at West Virginia University in Morgantown, West Virginia. Through WVSC's president, Dr. John W. Davis, she became one of three African-American students, and the only female, selected
+							to
+							integrate the graduate school after the United States Supreme Court ruling Missouri ex rel. Gaines v. Canada (1938). The court had ruled that states that provided public higher education to white students also had to provide it to black
+							students,
+							to be satisfied either by establishing black colleges and universities or by admitting black students to previously white-only universities.
+						</p>
+						<hr>
+					</section>
+					<div id="social-buttons">
+						<a href="www.twitter.com" class="btn btn-primary btn-lg btn-twitter">Twitter</a>
+						<a href="www.facebook.com" class="btn btn-primary btn-lg btn-facebook">Facebook</a>
+						<a href="www.pinterest.com" class="btn btn-primary btn-lg btn-pinterest">Pinterest</a>
+					</div>
+				</div>
+				<!--/.col-->
+			</div>
+			<!--/.row-->
+		</article>
+
+	</main>
+
+	<hr id="above-footer">
+	<!--Footer-->
+	<footer>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<a class="navbar-brand" href="#">&copy 2018 Aminat Amoo</a>
+			<div class="collapse navbar-collapse justify-content-end" id="navbarNavFooter">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="https://en.wikipedia.org/wiki/Ada_Lovelace">Source</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Privacy</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Sitemap</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</footer>
 </body>
 
 </html>
