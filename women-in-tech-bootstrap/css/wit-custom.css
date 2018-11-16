@@ -15,10 +15,21 @@ Hero decoration
   padding-top:0%;
   height: 20rem;
 }
+#top-right-image{
+  display:none;
+}
 
 @media screen and (min-width:900px){
   #sidebar-title-box{
     height: 45rem;
+  }
+
+  #top-right-image{
+    display:block;
+    float:right;
+    max-width:20%;
+    padding-top:20%;
+    margin-right: 10%;
   }
 }
 /*
@@ -85,25 +96,6 @@ Navigation decoration
   width:80%;
 }
 
-#top-right-image{
-  display:none;
-}
-
-@media screen and (min-width:900px){
-
-/*h1:hover + #top-right-image{
-  display:block;
-}*/
-
-#top-right-image{
-  display:block;
-  float:right;
-  max-width:20%;
-  padding-top:20%;
-  margin-right: 10%;
-}
-}
-
 /*
 --------------------------------------------------------------------------------------
 Sidebar decoration
@@ -137,7 +129,7 @@ Sidebar decoration
 #sidebar a{
   color:grey;
 }
-#sidebar-nav-ada a:hover, #sidebar-nav-grace a:hover, #sidebar-nav-katherine a:hover{
+#sidebar-nav-ada a:hover{
   color:rgba(232, 59, 162, 1);
 }
 #sidebar-nav-grace a:hover{
@@ -147,7 +139,12 @@ Sidebar decoration
   color:rgba(78, 162, 147, 1);
 }
 
-#sidebar-nav-ada, #sidebar-nav-grace, #sidebar-nav-katherine{
+#sidebar-nav-index a:hover{
+  color:lightgrey;
+}
+
+
+#sidebar-nav-ada, #sidebar-nav-grace, #sidebar-nav-katherine, #sidebar-nav-index{
   margin-top:30%;
 }
 .hidden-sidebar dt, .hidden-sidebar h3{
@@ -232,6 +229,25 @@ Main content decoration
 --------------------------------------------------------------------------------------
 */
 
+#index-img img{
+margin-top: 20%;
+max-width: 75%;
+margin-left: 15%;
+}
+
+#index-img a:hover .katherine{
+  border: 10px solid rgba(78, 162, 147, 1);
+}
+
+#index-img a:hover .grace{
+  border: 10px solid rgba(232, 131, 59, 1);
+}
+
+#index-img a:hover .ada{
+  border: 10px solid rgba(232, 59, 162, 1);
+}
+
+
 main section h3{
   font-family: "Orbitron";
   padding-top:3%;
@@ -303,18 +319,20 @@ Blockquote decoration
   font-family: sans-serif;
   color:rgba(78, 162, 147, 1);
 }
-blockquote footer{
-  font-style: italic;
-}
+
+/*.blockquote p{
+  font-family: "Orbitron";
+}*/
+
 #main-blockquote p{
   font-size:2rem;
-  font-family: "Orbitron";
   padding-top: 5%;
   text-align: center;
 }
-#main-blockquote footer{
-  /*margin-left:70%;*/
+.blockquote span{
+  font-size: 3rem;
 }
+
 
 /*
 --------------------------------------------------------------------------------------
