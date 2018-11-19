@@ -258,6 +258,10 @@ main section p{
   line-height: 200%;
 }
 
+#carousel, .carousel{
+  padding-top: 5%;
+}
+
 #social-buttons{
   margin-top:5%;
   margin-bottom:5%;
@@ -279,7 +283,8 @@ main section p{
 #social-buttons .btn-primary{
   border: none;
   display:block;
-  margin-top: 3%;
+  margin-top: 5%;
+  margin-right:45%;
 }
 
 .btn-twitter:hover{
@@ -294,10 +299,16 @@ main section p{
   background-color: #D15260;
 }
 @media screen and (min-width:900px){
+  #carousel, .carousel{
+    display:none;
+  }
+
   #social-buttons .btn-primary{
     display:inline;
     margin-top: 0%;
+    margin-right:0%;
   }
+
 }
 /*
 --------------------------------------------------------------------------------------
